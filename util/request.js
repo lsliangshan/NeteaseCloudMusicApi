@@ -134,7 +134,6 @@ const createRequest = (method, url, data = {}, options) => {
       url: url,
       headers: headers,
       data: new URLSearchParams(data).toString(),
-      withCredentials: true,
       httpAgent: new http.Agent({ keepAlive: true }),
       httpsAgent: new https.Agent({ keepAlive: true }),
     }
